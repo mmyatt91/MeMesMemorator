@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeMe Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="memegen.css" />
+</head>
+<body>
+ <h1>MeMe's Memeorator</h1>
+ <p> Make Your Very Own Meme!</p>
+  <form action='' id='addMeme'>
+    <div class="info">
+     <label for="img">Your Image</label>
+     <input type="url" id="img" name="Image URL" placeholder="Add Image URL" class="input"/>
+    </div>
+    <div class="info">
+        <label for="top">Text on Top</label>
+        <input type="text" id="top" name="Top Text" placeholder="Add Text for Top" class="input"/>
+    </div>
+    <div class="info">
+        <label for="bottom">Text on Bottom</label>
+        <input type="text" id="bottom" name="Bottom Text" placeholder="Add Text for Bottom" class="input"/>
+    </div>
+    <div class="submit">
+        <input type="submit" id="submit" value="Add Meme"/>
+    </div>
+</form>
+<p id="disclaimer">*To Delete Meme, Just Double Click</p>
+<div id="generated-memes">
+</div>
+    <script src="memegen.js"></script>
+</body>
+</html>
